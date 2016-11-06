@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Warehouse Escape - Seans Portfolio</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Seans Portfolio</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">About</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../helicoptering/">Helicoptering</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Warehouse Escape</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../shamballs/">Shamballs</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../contact/">Contact</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../helicoptering/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../shamballs/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#projects">Projects</a></li>
+        
+    
+        <li class="main "><a href="#warehouse-escape-solo-project">Warehouse Escape (Solo Project)</a></li>
+        
+            <li><a href="#overview">Overview</a></li>
+        
+            <li><a href="#middleware">Middleware</a></li>
+        
+            <li><a href="#controls">Controls</a></li>
+        
+            <li><a href="#screenshots">Screenshots</a></li>
+        
+            <li><a href="#reflection">Reflection</a></li>
+        
+            <li><a href="#files">Files</a></li>
+        
+            <li><a href="#references">References</a></li>
+        
+            <li><a href="#code-snippet">Code Snippet</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="projects">Projects</h1>
+<hr />
+<h1 id="warehouse-escape-solo-project">Warehouse Escape (Solo Project)</h1>
+<h2 id="overview">Overview</h2>
+<p>Warehouse escape is a top-down 2D shooter/strategy game built on COMP710 GP 2D Framework (Game framework created by Steffan Hooper), coded in C++ .
+You are a cardboard box filled with goods stuck in warehouse. It is your goal to escape by making your way through 
+the warehouse without being caught and jump into the back of the delivery truck to get out of there!</p>
+<p>The enemy employees will attempt to catch you, if you are within their range. They will move quickly. If they collide 
+with you then you will be reset. You also have the option kill the enemies by throwing smaller boxes at them, but 
+are limited to amount of ammo. If an employee is to catch you, you will respawn back at the start after 5 seconds.</p>
+<p>Every escape attempt will be recorded. </p>
+<p>The quicker the player reaches the end; the more points they will be rewarded.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aWHZoPctxYw" frameborder="0" allowfullscreen></iframe>
+
+<p>To see more, view the Game Design Document &amp; Techinical Design Document, below in the files section.</p>
+<hr />
+<h2 id="middleware">Middleware</h2>
+<p>The middlewares' implemented. Click each to see website(Opens in new tab).</p>
+<li><a href="http://box2d.org/" target="_blank">Box2D</a></li>
+
+<li><a href="https://www.libsdl.org/" target="_blank">SDL</a></li>
+
+<li><a href="http://www.fmod.org/" target="_blank">FMOD</a></li>
+
+<hr />
+<h2 id="controls">Controls</h2>
+<p><img src="../../img/warehouse/controls.png" width = '540' height = '380'></p>
+<hr />
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="../../img/warehouse/shooting.png" width = '540' height = '380'> <p>
+<img src="../../img/warehouse/win.png" width = '540' height = '380'></p>
+<hr />
+<h2 id="reflection">Reflection</h2>
+<p><strong>Overview:</strong><br>
+This project has been a great learning experience for myself. At first I found it very overwhelming, due to have doing majority 
+of my programming in Java.   This project has been a massive learning curve for myself. Throughout the development of 
+Warehouse Escape, I utilised the lecture slides, google, and the discussion forum to solve any programming issues that arose. 
+During development I was fortunate enough to have my flatmate’s test my game as it was being developed. This was very useful for 
+finding bugs, and also great for getting general feedback. </p>
+<p>I feel good with the end result. I do however regret not making a more fun side-scroller, rather than the top-down game that it 
+is. The game has no memory leaks, bugs, crashes, warnings, and can be restarted, paused, and quit. The quality of the code 
+could be improved, however due to time constraints, I felt the extra time I had would be better adding more features, and making 
+a gold build because it ran fine. The goal of the game is still the same as mentioned in the design phase. However, some features 
+were change during development, and some were not included.</p>
+<p><strong>Challenges:</strong><br>
+Box2D collision offsets - One issue I ran into was the Box2D colliders not being at the same location as my sprites. This was because
+the sprites were being placed from the middle, and my colliders were not. I solved this by applying the same logic using to place the
+sprites from the middle to the colliders. </p>
+<p>Drawing text to the screen caused me a bit of trouble, and was not drawing. I solved this by using the discussion forum provided by my 
+lecturer, Steffan Hooper, as other students were having similar problems. </p>
+<p>Another challenge I faced was collision filtering. I knew what logic I wanted my game to apply, but I needed to use Box2D's filtering
+system to solve this challenge. I spent some time researching; reading through the Box2D manual, and viewing other's problems on the 
+internet. Then I was able to apply what I had read into my game. Having collision filtering was essential to this game because I wanted
+different entities to interact differently with each other, in terms of collision.</p>
+<p><strong>What I would do different next time:</strong><br>
+In future projects, I would like to create a resource manager. This way all assets needed will be loaded into the game on launch, then can be
+accessed by all classes until the game is closed. Additionally, in future projects, I will be making more time to make games more data driven.</p>
+<p>I would like to upskill more before taking on projects in the future, as I did not upskill enough before using Box2D. This resulted
+in me using development time to upskill.</p>
+<p>Adding keyboard and mouse support for future games will definitely be implemented.</p>
+<hr />
+<h2 id="files">Files</h2>
+<p><li><a href="../../img/warehouse/GDDWarehouse.pdf" target="_blank">Game Design Document</a></li>
+<li><a href="../../img/warehouse/TDDWarehouse.pdf" target="_blank">Techinical Design Document</a></li>
+<li><a href="../../img/warehouse/reflection.pdf" target="_blank">Reflection</a></li></p>
+<hr />
+<h2 id="references">References</h2>
+<p>Catto, E. (2015). Box2D | A 2D Physics Engine for Games. [online] Box2d.org.<br> 
+Available at: http://box2d.org/ [Accessed 23 Oct. 2016].<p></p>
+<p>Fmod.org. (2016). FMOD. [online]<br> 
+Available at: http://www.fmod.org/ [Accessed 23 Oct. 2016].<p></p>
+<p>YouTube. (2016). NoCopyrightSounds. [online] <br>
+Available at: https://www.youtube.com/user/NoCopyrightSounds [Accessed 23 Oct. 2016].<p></p>
+<p>OpenGameArt.org. (2016). OpenGameArt.org. [online] <br>
+Available at: http://opengameart.org/ [Accessed 23 Oct. 2016].<p></p>
+<p>Libsdl.org. (2016). Simple DirectMedia Layer - Homepage. [online] <br>
+Available at: https://www.libsdl.org/ [Accessed 23 Oct. 2016].<p></p>
+<hr />
+<h2 id="code-snippet">Code Snippet</h2>
+<pre><code>// COMP710 GP 2D Framework
+
+// This includes:
+#include &quot;game.h&quot;
+
+// Local includes:
+#include &quot;backbuffer.h&quot;
+#include &quot;inputhandler.h&quot;
+#include &quot;logmanager.h&quot;
+#include &quot;Texture.h&quot;
+#include &quot;sprite.h&quot;
+#include &quot;AnimatedSprite.h&quot;
+#include &quot;entity.h&quot;
+#include &quot;PlayerShip.h&quot;
+#include &quot;Enemy.h&quot;
+#include &quot;Bullet.h&quot;
+#include &quot;background.h&quot;
+#include &quot;Box2D.h&quot;
+#include &quot;staticObject.h&quot;
+#include &quot;Menu.h&quot;
+
+// Library includes:
+#include &lt;cassert&gt;
+#include &lt;SDL.h&gt;
+#include &lt;SDL_ttf.h&gt;
+
+// Static Members:
+Game* Game::sm_pInstance = 0;
+
+Game&amp;
+Game::GetInstance()
+{
+    if (sm_pInstance == 0)
+    { 
+        sm_pInstance = new Game();
+    }
+
+    assert(sm_pInstance);
+
+    return (*sm_pInstance);
+}
+
+void 
+Game::DestroyInstance()
+{
+    delete sm_pInstance; 
+    sm_pInstance = 0;
+
+}
+
+Game::Game()
+: m_pBackBuffer(0)
+, m_pInputHandler(0)
+, m_looping(true)
+, m_executionTime(0)
+, m_elapsedSeconds(0)
+, m_frameCount(0)
+, m_FPS(0)
+, m_numUpdates(0)
+, m_lastTime(0)
+, m_lag(0)
+{
+
+}
+
+Game::~Game()
+{
+    //delete entities
+    for (auto i = bullets.begin(); i != bullets.end(); ++i)
+        delete *i;
+
+    for (auto x = enemies.begin(); x != enemies.end(); ++x)
+        delete *x;
+
+    for (auto y = staticObjects.begin(); y != staticObjects.end(); y++)
+        delete *y;
+
+    animatedBullet-&gt;~AnimatedSprite();
+    enemyChaseTexture-&gt;~Texture();
+
+    //release audio
+    if (!backgroundMusicReleased)
+        backgroundMusic-&gt;release();
+    winSound-&gt;release();
+    stunSound-&gt;release();
+    menuButtonSound-&gt;release();
+    hitEnemy-&gt;release();
+    spotEnemy-&gt;release();
+    hitWall-&gt;release();
+
+    //Background/Map
+
+
+    //other
+    delete m_pInputHandler;
+    m_pInputHandler = 0;    
+
+    delete world;
+    world = 0;
+
+    delete m_pBackBuffer;
+    m_pBackBuffer = 0;
+
+    //Delete sprites
+    delete mapSprite;
+    mapSprite = 0;
+
+    delete background;
+    background = 0;
+
+    delete playerSprite;
+    playerSprite = 0;
+
+    delete playerShip;
+    playerShip = 0;
+
+    delete startScreen;
+    startScreen = 0;
+
+    delete animatedBullet;
+    animatedBullet = 0;
+
+    delete blockSprite;
+    blockSprite = 0;
+
+    //MENU
+    delete m_menu;
+    m_menu = 0;
+
+    soundSystem-&gt;release();
+}
+
+bool 
+Game::Initialise()
+{
+    m_pBackBuffer = new BackBuffer();
+    if (!m_pBackBuffer-&gt;Initialise(SCREEN_WIDTH, SCREEN_HEIGHT))
+    {
+        LogManager::GetInstance().Log(&quot;BackBuffer Init Fail!&quot;);
+        return (false);
+    }
+
+    m_pInputHandler = new InputHandler();
+    if (!m_pInputHandler-&gt;Initialise())
+    {
+        LogManager::GetInstance().Log(&quot;InputHandler Init Fail!&quot;);
+        return (false);
+    }
+
+    controllerMode = STARTSCREEN;
+
+    //MENU
+    m_menu = new Menu();
+    m_menu-&gt;Initialise(m_pBackBuffer, SCREEN_WIDTH, SCREEN_HEIGHT);
+
+    //SOUND
+    // Create the sound system object.
+    FMOD::System_Create(&amp;soundSystem);
+    // Initialize the sound system object.
+    soundSystem-&gt;init(512, FMOD_INIT_NORMAL, 0);
+
+    //Initialize background music, and play.
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\btfragout.mp3&quot;, FMOD_DEFAULT, 0, &amp;backgroundMusic);
+    backgroundMusic-&gt;setMode(FMOD_LOOP_NORMAL);
+    soundSystem-&gt;playSound(backgroundMusic, 0, true, &amp;channel0);
+    channel0-&gt;setVolume(0.1f);
+    channel0-&gt;setPaused(false);
+
+    //Initialize other sounds
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\shoot01.flac&quot;, FMOD_DEFAULT, 0, &amp;stunSound);
+    stunSound-&gt;setMode(FMOD_LOOP_OFF);
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\hitWall.flac&quot;, FMOD_DEFAULT, 0, &amp;hitWall);
+    hitWall-&gt;setMode(FMOD_LOOP_OFF);
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\wincloud9.mp3&quot;, FMOD_DEFAULT, 0, &amp;winSound);
+    winSound-&gt;setMode(FMOD_LOOP_OFF);
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\menuSelection.wav&quot;, FMOD_DEFAULT, 0, &amp;menuButtonSound);
+    menuButtonSound-&gt;setMode(FMOD_LOOP_OFF);
+
+    //START SCREEN
+    startScreen = m_pBackBuffer-&gt;CreateSprite(&quot;assets\\sprites\\playScreen2.png&quot;);
+    startScreen-&gt;SetX(SCREEN_WIDTH/2);
+    startScreen-&gt;SetY(SCREEN_HEIGHT/2);
+
+    //MAP
+    //Load wall sprite
+    wallTexture = m_pBackBuffer-&gt;CreateTexture(&quot;assets\\sprites\\blackWall01.png&quot;);
+    blockSprite = m_pBackBuffer-&gt;CreateSprite(wallTexture);
+
+    //Spawn outer walls
+    SpawnMapBlock(wallTexture,world,true,800, 10, SCREEN_WIDTH/2, SCREEN_HEIGHT-5);
+    SpawnMapBlock(wallTexture, world, true, 800, 10, SCREEN_WIDTH / 2, 5);
+    SpawnMapBlock(wallTexture, world, true, 10, 600, SCREEN_WIDTH - 5, SCREEN_HEIGHT / 2);
+    SpawnMapBlock(wallTexture, world, true, 10, 600, 5, SCREEN_HEIGHT / 2);
+    //spawn inner walls (Truck Wall)
+    SpawnMapBlock(wallTexture, world, true, 10, 510, SCREEN_WIDTH - 137, SCREEN_HEIGHT / 2 - 36);
+    SpawnMapBlock(wallTexture, world, true, 10, 30, SCREEN_WIDTH - 137, SCREEN_HEIGHT / 2 + 275);
+    //spawn inner walls
+    SpawnMapBlock(wallTexture, world, false,20, 500, 100, SCREEN_HEIGHT / 2 + 50);
+    SpawnMapBlock(wallTexture, world, false, 400, 30, 380, 115);
+    SpawnMapBlock(wallTexture, world, false, 400, 60, 380, 215);
+    SpawnMapBlock(wallTexture, world, false, 30, 200, 195, 415);
+    SpawnMapBlock(wallTexture, world, false, 30, 200, 295, 415);
+    SpawnMapBlock(wallTexture, world, false, 400, 30, 380, 415);
+    SpawnMapBlock(wallTexture, world, false, 150, 30, 460, 330);
+    SpawnMapBlock(wallTexture, world, false, 150, 30, 460, 500);
+
+    //Initialize s
+    mapSprite = m_pBackBuffer-&gt;CreateSprite(&quot;assets\\sprites\\background2.png&quot;);
+    background = new Background(0, 0);
+    background-&gt;Initialise(mapSprite);
+
+    //PLAYER
+    //Load the player sprite.
+    playerSprite = m_pBackBuffer-&gt;CreateSprite(&quot;assets\\sprites\\playerBox.png&quot;);
+    //Create the player instance.
+    playerShip = new PlayerShip(world, 50, 550);
+    playerShip-&gt;Initialise(playerSprite);
+
+    //BULLET
+    animatedBullet = m_pBackBuffer-&gt;CreateAnimatedSprite(&quot;assets\\sprites\\cardboardBullet02.png&quot;);
+
+    //ENEMIES
+    //load enemy sprite
+    enemyTexture = m_pBackBuffer-&gt;CreateTexture(&quot;assets\\sprites\\enemyIdle.png&quot;);
+    enemyChaseTexture = m_pBackBuffer-&gt;CreateTexture(&quot;assets\\sprites\\enemyChase.png&quot;);
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\hitEnemy.flac&quot;, FMOD_DEFAULT, 0, &amp;hitEnemy);
+    soundSystem-&gt;createSound(&quot;assets\\sounds\\huh.wav&quot;, FMOD_DEFAULT, 0, &amp;spotEnemy);
+
+    //spawn enemies..
+    SpawnEnemy(enemyTexture, world, 300, 50);
+    SpawnEnemy(enemyTexture, world, 300, 280);
+    SpawnEnemy(enemyTexture, world, 300, 150);
+    SpawnEnemy(enemyTexture, world, 450, 280);
+    SpawnEnemy(enemyTexture, world, 300, 575);
+
+    //Set Timer to default values
+    ResetTimer();
+
+    m_lastTime = SDL_GetTicks();
+    m_lag = 0.0f;
+    return (true);
+}
+
+bool 
+Game::DoGameLoop()
+{
+    const float stepSize = 1.0f / 60.0f;
+    assert(m_pInputHandler);
+    m_pInputHandler-&gt;ProcessInput(*this);
+
+    if (m_looping)
+    {
+        int current = SDL_GetTicks();
+        float deltaTime = (current - m_lastTime) / 1000.0f;
+        m_lastTime = current;
+        m_executionTime += deltaTime;
+        m_lag += deltaTime;
+        while (m_lag &gt;= stepSize)
+        {
+            //If game is not paused then process as normal
+            if (!gamePaused &amp;&amp; !inStartScreen)
+            {
+                world-&gt;Step(stepSize, 6, 6);
+                Process(stepSize);
+            }
+            //if game is paused freeze simulation   
+            else
+            {
+                Process(0);
+                world-&gt;Step(0, 0, 0);
+            }       
+            m_lag -= stepSize;
+            ++m_numUpdates;
+        }
+        Draw(*m_pBackBuffer);
+    }
+
+    //If the game is paused, then pause all audio
+    if (!gamePaused)
+        soundSystem-&gt;update();
+
+    SDL_Delay(1);
+    return (m_looping);
+}
+
+void 
+Game::Process(float deltaTime)
+{
+        // Count total simulation time elapsed:
+        m_elapsedSeconds += deltaTime;
+
+        // Frame Counter
+        if (m_elapsedSeconds &gt; 1)
+        {
+            m_elapsedSeconds -= 1;
+            m_FPS = m_frameCount;
+            m_frameCount = 0;
+        }
+        //has player won?
+        CheckPlayerWin();
+
+        //if game is not finished, then process.
+        if (!gameFinished)
+        {
+            // W02.3: Process each bullet in the container.
+            for (Bullet* currentBullet : bullets)
+            {
+                if (currentBullet-&gt;IsDead() == false)
+                    currentBullet-&gt;Process(deltaTime);
+            }
+
+            //process each enemy in container
+            for (Enemy* enemy : enemies)
+            if (enemy-&gt;IsDead() == false)
+                enemy-&gt;Process(deltaTime);
+
+            GameTimer(deltaTime);
+        }
+
+        playerShip-&gt;Process(deltaTime);
+
+        //Remove any dead bullets from the container...
+        std::vector&lt;Bullet*&gt;::iterator bulletIter;
+        bulletIter = bullets.begin();
+        while (bulletIter != bullets.end())
+        {
+            Bullet* currentBullet = *bulletIter;
+            if (currentBullet-&gt;IsDead())
+            {
+                bulletIter = bullets.erase(bulletIter);
+                delete currentBullet;
+            }
+            else
+                ++bulletIter;
+        }
+
+        bullets.shrink_to_fit();
+
+        //Remove dead enemies from container
+        std::vector&lt;Enemy*&gt;::iterator enemyIter;
+        enemyIter = enemies.begin();
+        while (enemyIter != enemies.end())
+        {
+            Enemy* currentEnemy = *enemyIter;
+            if (currentEnemy-&gt;IsDead())
+            {
+                enemyIter = enemies.erase(enemyIter);
+                delete currentEnemy;
+            }
+            else
+                ++enemyIter;
+        }
+        enemies.shrink_to_fit();
+}
+
+void 
+Game::Draw(BackBuffer&amp; backBuffer)
+{
+    ++m_frameCount;
+    backBuffer.Clear();
+
+    //Draw background
+    background-&gt;Draw(backBuffer);
+
+    //draw static objects
+    for (StaticObject* obj : staticObjects)
+        if (obj-&gt;draw == true)
+            obj-&gt;Draw(backBuffer);
+
+    //Draw start screen
+    if (inStartScreen)
+        startScreen-&gt;Draw(backBuffer);
+    else
+    {
+        //draw enemies
+        for (Enemy* enemy : enemies)
+            enemy-&gt;Draw(backBuffer);
+
+        // W02.3: Draw all bullets in container...
+        for (Bullet* currentBullet : bullets)
+            currentBullet-&gt;Draw(backBuffer);
+
+        //Draw the player...
+        playerShip-&gt;Draw(backBuffer);
+
+        if (gamePaused)
+            m_menu-&gt;Draw(backBuffer);
+        if (gameFinished)
+        {
+            backBuffer.DrawText(false, &quot;You win!&quot;, SCREEN_WIDTH / 2 - 90, SCREEN_HEIGHT / 2 - 200);
+        }
+
+        //Draw Attempts by player
+        backBuffer.DrawText(true, &quot;Attempts:&quot;, 10, 12);
+        backBuffer.DrawText(true, playerShip-&gt;getPlayerAttempts(), 110, 14);
+        backBuffer.DrawText(true, &quot;Ammo:&quot;, 10, 32);
+        backBuffer.DrawText(true, playerShip-&gt;printBulletNumber(), 110, 32);
+
+        //Score
+        backBuffer.DrawText(true, playerShip-&gt;getPlayerScore(), 675, 76);
+
+        //Draw Timer
+        backBuffer.DrawText(true, &quot;Time:&quot;, 700, 12);
+        backBuffer.DrawText(true, &quot;_____&quot;, 700, 12);
+        backBuffer.DrawText(true, &quot;Min:&quot;, 675, 36);
+        backBuffer.DrawText(true, this-&gt;currentMinute, 745, 36);
+        backBuffer.DrawText(true, &quot;Sec:&quot;, 675, 56);
+        backBuffer.DrawText(true, this-&gt;currentSecond, 745, 56);
+    }
+
+    backBuffer.Present();   
+}
+
+void 
+Game::Quit()
+{
+    m_looping = false;
+}
+void
+Game::StartGame()
+{       
+    inStartScreen = false;
+    controllerMode = INGAME;
+}
+
+//Player directionals
+//Move player horizontally 
+void 
+Game::MovePlayerLeft(int input)
+{
+    playerShip-&gt;setXInput((float)input);
+}
+//move player vertically
+void
+Game::MovePlayerUp(int input)
+{
+    playerShip-&gt;setYInput((float)input);
+}
+
+//Spawn bullet
+void 
+Game::FireStun(float x, float y)
+{
+        //if game is not finished
+        if (!gameFinished)
+        {
+            if (playerShip-&gt;getBulletCount() &gt; 0)
+            {   
+                //Create a new bullet object.
+                bullet = new Bullet(world, soundSystem, hitWall, playerShip-&gt;GetPositionX(), playerShip-&gt;GetPositionY());
+                bullet-&gt;Initialise(animatedBullet);
+
+                //Set the bullets verticle and horizontal velocity.
+                bullet-&gt;SetVerticalVelocity(x);
+                bullet-&gt;SetHorizontalVelocity(y);
+
+                bullet-&gt;Process(0);
+                //Add the new bullet to the bullet container.
+                bullets.push_back(bullet);
+
+                soundSystem-&gt;playSound(stunSound, 0, false, &amp;channel0);
+                if (!cheats)
+                    playerShip-&gt;setBulletCount(playerShip-&gt;getBulletCount() - 1);
+                else
+                {
+                    playerShip-&gt;setBulletCount(1337);
+                }
+            }
+        }
+}
+//Timer
+void
+Game::GameTimer(float deltaTime)
+{
+    this-&gt;m_second;
+    this-&gt;m_minute;
+
+    if (m_second &lt; 60)
+    {
+        m_second += deltaTime;
+    }
+    else
+    {
+        m_minute++;
+        m_second = 0;
+    }
+
+    //Covert time (float) to int, then int to to const char* 
+    //secs
+    int tmpSec = (int)m_second;
+    sec = std::to_string(tmpSec);
+    currentSecond = sec.c_str();
+    //mins
+    int tmpMin = (int)m_minute;
+    min = std::to_string(tmpMin);
+    currentMinute = min.c_str();
+}
+void
+Game::ResetTimer()
+{
+    this-&gt;m_second = 0;
+    this-&gt;m_minute = 0;
+}
+
+//Creates objects of different sizes and adds them to staticObjects container
+void
+Game::SpawnMapBlock(Texture* texture, b2World* world, bool drawSprite, int width, int height, float xPos, float yPos)
+{
+
+    staticObject = new StaticObject(world, blockSprite, drawSprite, width, height, xPos, yPos);
+    staticObject-&gt;Process(0);
+    staticObjects.push_back(staticObject);
+}
+//Creates enemies and adds them to enemies container
+void
+Game::SpawnEnemy(Texture* texture, b2World* world, float xPos, float yPos)
+{
+    enemySprite = m_pBackBuffer-&gt;CreateSprite(texture);
+    animatedSprite = m_pBackBuffer-&gt;CreateAnimatedSprite(enemyChaseTexture);
+    enemyObject = new Enemy(world, soundSystem,hitEnemy, spotEnemy, enemySprite, animatedSprite, xPos, yPos, playerShip);
+    enemies.push_back(enemyObject);
+}
+
+//Check if player has won - if player reaches end of map.
+void
+Game::CheckPlayerWin()
+{
+    if (playerShip-&gt;GetPositionX() &gt;= 700 &amp;&amp; !gameFinished)
+    {
+        PlayerWins();
+        LogManager::GetInstance().Log(&quot;You Win.&quot;);
+    }
+}
+
+//Kills all enemies, plays win music, and stops game loop////
+void 
+Game::PlayerWins()
+{
+    for (Enemy* enemy : enemies)
+            enemy-&gt;killEnemy();
+        backgroundMusic-&gt;release();
+        backgroundMusicReleased = true;
+        soundSystem-&gt;playSound(winSound, 0, true, &amp;channel0);
+        channel0-&gt;setVolume(0.5f);
+        channel0-&gt;setPaused(false);
+
+        if (m_second &lt; 15 &amp;&amp; m_minute &lt; 1)
+            playerShip-&gt;UpdateScore(-50);
+        else if (m_second &lt; 30 &amp;&amp; m_minute &lt; 1)
+            playerShip-&gt;UpdateScore(-40);
+        else if (m_second &lt; 30 &amp;&amp; m_minute &lt; 1)
+            playerShip-&gt;UpdateScore(-40);
+        else if (m_second &lt; 45 &amp;&amp; m_minute &lt; 1)
+            playerShip-&gt;UpdateScore(-30);
+        else if (m_second &lt; 60 &amp;&amp; m_minute &lt; 1)
+            playerShip-&gt;UpdateScore(-25);
+        else
+            playerShip-&gt;UpdateScore(-10);
+
+        gameFinished = true;
+        PauseGame();
+}
+//Pause Simulation///////////////////////////////
+void
+Game::PauseGame()
+{
+    //boolean used to switch
+    if (!gamePaused)
+    {
+        gamePaused = true;
+        controllerMode = MENU;
+    }
+    else
+    {
+        gamePaused = false;
+        m_menu-&gt;ResetMenu();
+        controllerMode = INGAME;
+    }   
+}
+/////////////////////////Menu//////////////////////////////////////////
+void
+Game::ScrollMenu(int x)
+{
+    if (gamePaused){
+        m_menu-&gt;ChangeButton(x);
+        soundSystem-&gt;playSound(menuButtonSound, 0, false, &amp;channel0);
+    }
+}
+void
+Game::PressMenuButton()
+{
+    if (gamePaused)
+    {
+        if (m_menu-&gt;getButton() == 0)
+            PauseGame();
+        else if (m_menu-&gt;getButton() == 1)
+            ResetGame();
+        else if (m_menu-&gt;getButton() == 2)
+            Quit();
+    }
+}
+void
+Game::ResetGame()
+{
+    resetGame = true;
+}
+bool
+Game::WillReset()
+{
+    return resetGame;
+}
+ControllerOption
+Game::getCurrentController()
+{
+    return controllerMode;
+}
+bool
+Game::isGameFinished()
+{
+    return gameFinished;
+}
+void
+Game::enableCheats()
+{
+    if (cheats)
+    {
+        cheats = false;
+        LogManager::GetInstance().Log(&quot;Cheats Disabled.&quot;);
+    }
+    else
+    {
+        cheats = true;
+        LogManager::GetInstance().Log(&quot;Cheats Enabled.&quot;);
+        playerShip-&gt;setBulletCount(1337);
+    }
+
+}
+bool
+Game::cheatsEnabled()
+{
+    return cheats;
+}
+///////////////Cheats///////////////////////
+//No clip
+void 
+Game::NoClip()
+{
+    if (!gamePaused)
+    {
+        playerShip-&gt;NoClip();
+    }
+}
+//Instantly Win
+void
+Game::InstantWin()
+{
+    if (!gamePaused)
+    {
+        LogManager::GetInstance().Log(&quot;You Win - Cheater.&quot;);
+        PlayerWins();
+    }
+}
+//Kill all enemies
+void
+Game::KillAllEnemies()
+{
+    if (!gamePaused)
+    {
+        for (Enemy* enemy : enemies)
+            enemy-&gt;killEnemy();
+        LogManager::GetInstance().Log(&quot;All enemies killed.&quot;);
+    }
+
+}
+//Invincible/God mode - Cannot be caught by enemies
+void
+Game::Invincible()
+{
+    if (!gamePaused)
+        playerShip-&gt;ToggleInvincible();
+}
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
